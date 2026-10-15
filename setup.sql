@@ -368,6 +368,6 @@ create policy slides_teacher_update on storage.objects for update to authenticat
 create policy slides_teacher_delete on storage.objects for delete to authenticated using (bucket_id = 'slides' and is_teacher());
 
 -- ------------------------------------------------------------
--- 교사 이메일: jeonghaegyeong1@gmai.com 을 자기 이메일(소문자)로 바꾸세요. 여러 명이면 줄을 더하면 됩니다.
+-- 교사 이메일: teacher@example.com 을 자기 이메일(소문자)로 바꾸세요. 여러 명이면 줄을 더하면 됩니다.
 -- ------------------------------------------------------------
-insert into teachers (email) values ('teacher@example.com') on conflict do nothing;
+insert into teachers (email) values ('jeonghaegyeong1@gmai.com') on conflict do nothing;
